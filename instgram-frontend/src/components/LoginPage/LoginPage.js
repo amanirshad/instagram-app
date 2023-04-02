@@ -4,6 +4,9 @@ import Grid from "@material-ui/core/Grid";
 import insta_image from '../../images/9364675fb26a.svg'
 import insta_logo from '../../images/logoinsta.png'
 import fb from '../../images/fb.png'
+import appstore from '../../images/app.png'
+import playstore from '../../images/play.png'
+import SignIn from "../SignIn/SignIn";
 
 class LoginPage extends Component{
     constructor(props){
@@ -24,9 +27,8 @@ class LoginPage extends Component{
                                 <div className="loginpage_rightcomponent">
                                     <img className="loginpage_logo" src={insta_logo}/>
                                     <div className="loginpage_signin">
-                                        <input className="loginpage_text" type="text" placeholder="Phone number, username, or email"/>
-                                        <input className="loginpage_text" type="password" placeholder="Password"/>
-                                        <button className="loginpage_button">Log In</button>
+
+                                        <SignIn/>
 
                                         <div className="loginpage_ordiv">
                                             <div className="loginpage_divider"></div>
@@ -39,6 +41,27 @@ class LoginPage extends Component{
                                         <div className="loginpage_forgot"> Forgot password?</div>
                                     </div>
                                 </div>
+
+                                <div className="loginpage_signupoption">
+                                    <div className="loginpage_signin">
+                                        Don't have an account? <span style={{"fontWeight":"bold","color":"#0395f6"}}>Sign up</span>
+                                    </div>
+                                    <div className="loginpage_signup">
+                                        Have an account? <span style={{"fontWeight":"bold","color":"#0395f6"}}>Sign in</span>
+                                    </div>
+                                </div>
+
+                                <div className="loginpage_downloadsection">
+                                    <div>
+                                        Get the app.
+                                    </div>
+                                    <div className="loginpage_option">
+                                        <img src={appstore} className="loginpage_dwimg" width="136px"/>
+                                        <img src={playstore} className="loginpage_dwimg" width="136px"/>
+                                    </div>
+                                </div>
+
+
                             </div>
                         </div>
                     </Grid>
