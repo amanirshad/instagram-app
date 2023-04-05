@@ -77,7 +77,7 @@ class Post extends Component {
         <div>
             {
                 this.state.commentList.map((item,index)=>(
-                    <div className="post_comment">{item.username}: {item.description}</div>
+                    <div className="post_comment"><b>{item.username}</b>: {item.description}</div>
                 ))
             }
           
