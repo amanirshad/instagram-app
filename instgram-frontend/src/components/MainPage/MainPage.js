@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Post from "../Post/Post";
 import "./MainPage.css";
+import uploadImage from '../../images/upload.png'
 
 class MainPage extends Component {
   constructor(props) {
@@ -47,7 +48,10 @@ class MainPage extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{"width":"615px"}}>
+        <div style={{"textAlign":"center","margin":"10px"}}>
+            <img className="mainpage_uploadicon" src={uploadImage}/>
+        </div>
         {
           this.state.postList.map((item,index)=>(
             <Post

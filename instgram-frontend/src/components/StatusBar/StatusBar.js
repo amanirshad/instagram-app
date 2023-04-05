@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import "./StatusBar.css";
 import statusimg from '../../images/pp1.png'
 import statusimg2 from '../../images/pp2.png'
+import uploadImage from '../../images/statusadd.png'
 
 class StatusBar extends Component {
   constructor(props) {
@@ -52,6 +53,7 @@ class StatusBar extends Component {
     return (
       <div>
         <div className="statusbar_container">
+          <img className="statusbar_upload" width="55px" height="55px" src={uploadImage}/>
             {
                 this.state.statusList.map((item,index)=>(
                     <div className="status">

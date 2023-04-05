@@ -30,7 +30,7 @@ class MainContent extends Component {
                 <Suggestion/>
             </Grid>
             <Grid item xs={2}>
-                fd
+                
             </Grid>
         </Grid>
       </div>
