@@ -1,7 +1,9 @@
 import Grid from "@material-ui/core/Grid";
 import React, { Component } from "react";
+import InfoSection from "../InfoSection/InfoSection";
 import MainPage from "../MainPage/MainPage";
 import StatusBar from "../StatusBar/StatusBar";
+import Suggestion from "../Suggestion/Suggestion";
 import "./MainContent.css";
 
 class MainContent extends Component {
@@ -24,7 +26,8 @@ class MainContent extends Component {
                 </div>
             </Grid>
             <Grid item xs={2}>
-                12
+                <InfoSection/>
+                <Suggestion/>
             </Grid>
             <Grid item xs={2}>
                 fd
