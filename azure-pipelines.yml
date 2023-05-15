@@ -16,6 +16,7 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
+    cd instgram-frontend
     npm install --legacy-peer-deps
     npm install express
     npm run build
