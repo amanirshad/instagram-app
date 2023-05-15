@@ -24,7 +24,7 @@ steps:
 
 - task: AzureStaticWebApp@0
   inputs:
-    app_location: "dist" 
+    app_location: "build" 
     api_location: ""
     output_location: "build"
   env:
